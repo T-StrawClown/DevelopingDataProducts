@@ -13,7 +13,9 @@
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/rickshaw/css/rickshaw.min.css"></link>
+<link rel=stylesheet href="libraries/widgets/rickshaw/css/jquery-ui.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
 
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
@@ -23,7 +25,11 @@
     src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
   </script>
   
-  
+  <script src="libraries/widgets/rickshaw/js/d3.v2.min.js"></script>
+<script src="libraries/widgets/rickshaw/js/rickshaw.min.js"></script>
+<script src="libraries/widgets/rickshaw/js/jquery.min.js"></script>
+<script src="libraries/widgets/rickshaw/js/jquery-ui.min.js"></script>
+
 
 </head>
 <body style="opacity: 0">
@@ -46,7 +52,7 @@
     <h2>Crime Rates by Moon Phases</h2>
   </hgroup>
   <article data-timings="">
-    <iframe src="rs.html" width=100%, height=600></iframe>
+    <p><iframe src=' assets/fig/rickshaw-1.html ' scrolling='no' frameBorder='0' seamless class='rChart rickshaw ' id=iframe- chart1280ba22f3 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
 
   </article>
   <!-- Presenter Notes -->
