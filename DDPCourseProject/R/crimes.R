@@ -57,8 +57,8 @@ message("done")
 print(proc.time() - ptm)
 
 crimes.by_yearmonth <- crimes.by_day %>%
-    mutate(ym = as.POSIXct(paste(year, month, "01", sep = "-"))) %>%
-    #mutate(ym = as.numeric(as.POSIXct(paste(year, month, "01", sep = "-")))) %>%
+    #mutate(ym = as.POSIXct(paste(year, month, "01", sep = "-"))) %>%
+    mutate(ym = as.numeric(as.POSIXct(paste(year, month, "01", sep = "-")))) %>%
     group_by(ym, moon) %>%
     summarize(cnt = sum(cnt)) %>%
     filter(!is.na(ym))
@@ -79,13 +79,13 @@ plot(gvisAnnotationChart(crimes.by_yearmonth,
 #                             colors="['#e41a1c', '#377eb8', '#4daf4a', '#984ea3']"
 #                           )))
 
-# t <- "line"
-# p2 <- Rickshaw$new()
-# p2$layer(cnt ~ ym, group = "moon", data = crimes.by_yearmonth, type = t,
-#          colors = c("#e41a1c", "#377eb8", "#4daf4a", "#984ea3"))
-# p2$set(slider = TRUE)
-# p2
-# 
+t <- "line"
+p2 <- Rickshaw$new()
+p2$layer(cnt ~ ym, group = "moon", data = crimes.by_yearmonth, type = t,
+         colors = c("#e41a1c", "#377eb8", "#4daf4a", "#984ea3"))
+p2$set(slider = TRUE)
+p2
+
 
 # 
 # full.ds <- subset(crimes.by_day, moon == "Full")
