@@ -5,16 +5,16 @@
 # http://shiny.rstudio.com
 #
 
-require("ggplot2")
-require("lunar")
-require("dplyr")
-require("lubridate")
-require("maps")
-require("leaflet")
-require("googleVis")
-library(shiny)
-
-load("data/crimes.RData")
+# require("ggplot2")
+# require("lunar")
+# require("dplyr")
+# require("lubridate")
+# require("maps")
+# require("leaflet")
+# require("googleVis")
+# library(shiny)
+# 
+# load("data/crimes.RData")
 
 shinyServer(function(input, output) {
 

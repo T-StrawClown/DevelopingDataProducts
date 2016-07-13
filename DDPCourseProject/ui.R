@@ -4,15 +4,15 @@
 #
 # http://shiny.rstudio.com
 #
-require("ggplot2")
-require("lunar")
-require("dplyr")
-require("lubridate")
-require("maps")
-require("leaflet")
-require("googleVis")
-library(shiny)
-options(RCHART_TEMPLATE = 'Rickshaw.html')
+# require("ggplot2")
+# require("lunar")
+# require("dplyr")
+# require("lubridate")
+# require("maps")
+# require("leaflet")
+# require("googleVis")
+# library(shiny)
+
 
 shinyUI(
   tabsetPanel(
@@ -42,7 +42,8 @@ shinyUI(
                         target = "_blank")),
                       p(),
                       h4("About application"),
-                      p("On Maps tab it is possible view locations of individual crimes of chosen type and month."),
+                      p("On Maps tab it is possible view locations of individual crimes of chosen type and month.
+                        You can zoom by simply clicking on any circle. Give it some time to load, since it has a lot of data underneath."),
                       p(),
                       p("On Moon phase tab there's a proof that full moon has no influence on crime rates. I used Bootstrapping for
                         simulations and verified means of simulated data with their 95% confidence intervals, which clearly shows that

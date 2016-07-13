@@ -1,10 +1,10 @@
 name: DDPCourseProject
 account: tstrawclown
 server: shinyapps.io
-appId: 113249
-bundleId: 501599
+appId: 114210
+bundleId: 503918
 url: https://tstrawclown.shinyapps.io/DDPCourseProject/
-when: 1468235312.25
+when: 1468427110.4502
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: R/crimes.R
